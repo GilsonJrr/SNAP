@@ -1,0 +1,320 @@
+:root{
+    --AlmostWhite: hsl(0, 0%, 98%);
+    --MediumGray: hsl(0, 0%, 41%);
+    --AlmostBlack: hsl(0, 0%, 8%);
+}
+body{
+    margin: 0px;
+    font-family: 'Epilogue';
+}
+header{
+    margin: 0px;
+    /* width: 100%; */
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+div#menuBg{
+    /* margin: -25px; */
+    /* display: block; */
+    background-color: rgb(0, 0, 0, 0.4);
+    width: 0%;
+    height: 100vh;
+    right: 0px;
+    top: 0px;
+    position: absolute;
+}
+div#menuDiv{
+    display: none;
+    /* position: absolute; */
+    background-color: var(--AlmostWhite);
+    color: var(--MediumGray);
+    height: 100vh;
+    width: 65vw;
+    right: 0px;
+    top: 0px;
+    position: absolute;
+    /* box-shadow: 0px 0px 1000px 0px rgb(0, 0, 0, 1); */
+}
+div#menuDiv img{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+div#menuOptions{
+    margin: 80px 30px 30px 30px;
+}
+div#menuOptions a{
+    font-size: 5vw;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+div#menuOptions a img{
+    position: relative;
+    right: 0px;
+    top: 0px;
+}
+div#features{
+    display:none;
+    width: 100%;
+    margin-left: 40px;
+}
+div#features a{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+}
+div#features a img{
+    margin-right: 20px;
+}
+div#company{
+    display:none;
+    width: 100%;
+    margin-left: 25px;
+}
+div#logRes{
+    display: none;
+}
+div#top img{
+    width: 100%;
+}
+img#topImgDesk{
+    display: none;
+}
+img#ham{
+    cursor: pointer;
+}
+div#botton{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+div#botton h1 {
+    font-size: 9vw;
+    font-weight: 700;
+    text-align: center;
+    margin: 70px 0px 40px;
+}
+div#botton h2{
+    font-size: 4.5vw;
+    font-weight: 500;
+    text-align: center;
+    line-height: 28px;
+    color: var(--MediumGray);
+}
+div#botton button{
+    background-color: var(--AlmostBlack);
+    border: none;
+    padding: 15px 25px;
+    border-radius: 15px;
+    color: var(--AlmostWhite);
+    font-weight: 700;
+    font-size: 4.5vw;
+    margin: 15px 0px 50px;
+    cursor: pointer;
+}
+div#botton button:hover{
+    border: solid 1px var(--AlmostBlack);
+    background-color: var(--AlmostWhite);
+    color: var(--AlmostBlack);
+}
+footer{
+    width: 95%;
+    padding: 2.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+footer img{
+    width: 18%;
+}
+
+@media only screen and (min-width: 600px) {
+    body{
+        height: 100vh;
+    }
+    header{
+        width: 95%;
+        padding: 2.5%;
+        height: 10vh;
+        margin-bottom: 10vh;
+        justify-content: space-between;
+    }
+    section {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-around;
+        height: 50vh;
+    }
+    div#bottonSpace{
+        height: 20vh;
+    }
+    div#top{
+        /* width: 40%; */
+        /* height: 10%; */
+        padding: 0px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    img#closeMenu{
+        display: none;
+    }
+    div#menuBg{
+        background-color: transparent;
+        width: 100vw;
+        height: 7vh;
+        position: relative;
+        margin: 0px;
+        padding: 0px;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    div#menuDiv{
+        position: block;
+        margin: 0px;
+        padding: 0px;
+        display: block;
+        background-color: transparent;
+        /* color: var(--MediumGray); */
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    div#menuOptions{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0px;
+        margin: 0px;
+    }
+    div#menuOptions a{
+        font-size: 20px;
+        margin: 0px;
+        padding: 0px;
+        cursor: pointer;
+    }
+    div#menuOptions p{
+        margin: 0px 10px;
+        padding: 0px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+    div#menuOptions a:hover{
+        color: var(--AlmostBlack);
+    }
+    div#features{
+        position: none;
+        display: none;
+        flex-direction: column;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 0px 40px 6px rgb(0, 0, 0, 0.4);
+        border-radius: 10px;
+        padding: 30px 30px 10px;
+        width: 150px;
+        margin: 260px 0px 0px -50px;
+    }
+    div#features a{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    div#features a img{
+        margin-right: 20px;
+    }
+    div#company{
+        position: none;
+        display: none;
+        flex-direction: column;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 0px 40px 6px rgb(0, 0, 0, 0.4);
+        border-radius: 10px;
+        padding: 30px 30px 10px;
+        width: 100px;
+        margin: 220px 0px 0px 205px;
+    }
+    div#company a{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    div#logRes{
+        display: flex;
+        align-items: center;
+        color: var(--MediumGray);
+    }
+    div#logRes p{
+        cursor: pointer;
+    }
+    div#logRes p:hover{
+        color: var(--AlmostBlack);
+    }
+    p#Register{
+        border: solid 2px rgb(0, 0, 0,0.4);
+        border-radius: 15px;
+        padding: 10px 20px;
+        margin-left: 30px;
+        cursor: pointer;
+    }
+    p#Register:hover{
+        color: var(--AlmostBlack);
+        border: solid 2px rgb(0, 0, 0, 0.9);
+    }
+    div#botton{
+        width: 40%;
+        height: 80vh;
+        align-items: flex-start;
+        /* margin: 50px; */
+        justify-content: flex-end;
+    }
+    div#botton h1 {
+        font-size: 6vw;
+        text-align: left;
+    }
+    div#botton h2{
+        font-size: 18px;
+        text-align: left;
+        margin-bottom: 40px;
+    }
+    div#botton button{
+        font-size: 1.3vw;
+    }
+    img#ham{
+        display: none;
+    }
+    img#topImgMobile{
+        display: none;
+    }
+    img#topImgDesk{
+        display: block;
+        /* width: 10px; */
+        height: 75vh;
+        margin: 10px;
+        top: 0px;
+        right: 0px;
+    }
+    footer{
+        margin-top: 30px;
+        width: 100%;
+        padding: 0%;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    footer img{
+        margin-right: 50px;
+    }
+  }
